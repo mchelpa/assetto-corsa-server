@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  assetto-corsa-server-updater:
+    image: mchelpa/steamcmd
+    env_file:
+    - ./steam-credentials.env
+    volumes: 
+    - ./ac-server:/Steam/steamapps
+
